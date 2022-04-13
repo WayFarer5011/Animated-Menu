@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", Arial;
+}
+
+body {
+    background-color: rgb(28, 26, 26);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.nav__bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 60px;
+    color: white;
+}
+
+.menu {
+    opacity: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    align-items: center;
+    top: -100%;
+    background-color: rgb(48, 45, 45);
+    padding: 0 50px;
+}
+
+.menuBtn {
+    cursor: pointer;
+}
+
+.exit {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.nav__link {
+    font-size: 4rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav {
+    margin-top: -20px;
+    opacity: 0;
+}
+
+.nav__link:hover {
+    color: rgb(159, 153, 153);
+}
+
+.numbers {
+    font-size: 1.5rem;
+}
+
+.information {
+    margin-bottom: 24px;
+}
+
+.title {
+    color: rgb(224, 199, 169);
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.background {
+    z-index: -1;
+    position: absolute;
+    font-size: 14rem;
+    color: rgba(255, 255, 255, 0.1);
+    font-weight: 700;
+}
+
+@media screen and (max-width: 567px) {
+    .menu {
+        flex-direction: column;
+    }
+
+    .nav__link {
+        font-size: 3rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .background {
+        top: 22%;
+        font-size: 12rem;
+    }
+    
+}
+
+@media screen and (max-width: 375px) {
+    .background {
+        top: 30%;
+        font-size: 8rem;
+    }
+}
